@@ -1,7 +1,11 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class FamousQuotes {
     public static void main(String[] args) {
+        Scanner quoteScanner = new Scanner(System.in);
+
         String[] quotes = {"\"Be yourself; everyone else is already taken.\"",
                 "\"So many books, so little time.\"",
                 "\"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.\"",
@@ -12,8 +16,9 @@ public class FamousQuotes {
                 "\"Be the change that you wish to see in the world.\"",
                 "\"In three words I can sum up everything I've learned about life: it goes on.\"",
                 "\"If you tell the truth, you don't have to remember anything.\"",
-                "\"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.\""
         };
 
+        System.out.println("Pick a number from 1-10");
+        System.out.println(quotes[quoteScanner.nextInt()-1]);
     }
 }
